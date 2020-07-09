@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/3b1c75d67e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body id="page">
+    <header>
+        <a id="logo" href="#"><i class="fas fa-space-shuttle"></i></a>
+        <input type="checkbox" name="" id="">
+        <span></span>
+        <span></span>
+        <span></span>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home"></section>
+
+    <section id="about">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi id totam sed maxime commodi, consectetur
+            necessitatibus ullam laborum provident aperiam. Esse sequi soluta eaque cumque? Praesentium at distinctio
+            iste voluptatem!</p>
+    </section>
+
+    <section id="services">
+        <div>
+            <h2>How do I apply? <button type="button" onclick="showAnswer()">+</button></h2>
+            <p id="answer" class="hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, ullam. Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div>
+            <h2>What are entry requirements? <button type="button" onclick="showReq()">+</button></h2>
+            <p id="req" class="hide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, soluta.</p>
+        </div>
+    </section>
+
+    <footer>
+        <button type="button" class="circle black-white" onclick="toBlack()"></button>
+        <button type="button" class="circle white-black" onclick="toWhite()"></button>
+        <button type="button" class="circle pink-dark" onclick="toPink()"></button>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  position: relative;
+  height: 6vh;
+}
+
+nav {
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4c4c4;
+  color: #ffffff;
+  top: 0;
+  bottom: 0;
+  right: -60%;
+  z-index: 10;
+  transition: all 1s ease;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+li a {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+/* hamburger */
+input {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  z-index: 12;
+}
+span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #f4c4c4;
+  z-index: 11;
+  transition: all 0.5s ease;
+}
+span:nth-of-type(2) {
+  top: 21px;
+}
+span:nth-of-type(3) {
+  top: 32px;
+}
+input:checked ~ nav {
+  right: 0;
+}
+input:checked ~ span:nth-of-type(1) {
+    background: white;
+  transform: rotate(45deg) translateY(10px) translateX(12px);
+}
+input:checked ~ span:nth-of-type(2) {
+    background: white;
+  display: none;
+}
+input:checked ~ span:nth-of-type(3) {
+    background: white;
+  transform: rotate(-45deg) translateY(-5px) translateX(5px);
+}
+
+#logo {
+  position: fixed;
+  top: 7px;
+  left: 10px;
+  color: #f4c4c4;
+  font-size: 1.5em;
+}
+
+#home {
+  height: 94vh;
+  background: url(https://images.unsplash.com/photo-1552508744-1696d4464960?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
+    center/cover no-repeat;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10vh 10% 15vh 10%;
+  text-align: center;
+}
+
+#about h1 {
+  padding-bottom: 3vh;
+}
+
+#services {
+  padding: 5vh 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 30vh;
+}
+
+#services div {
+  text-align: center;
+}
+
+#services p {
+  width: 70%;
+  padding-top: 2vh;
+overflow: hidden;
+}
+/* transition on click */
+.hide {
+  display: inline-block;
+  height: 0;
+  transition: height .3s ease;
+
+}
+.show {
+  display: inline-block;
+    height: 50px;
+    transition: height .3s ease;
+}
+
+.circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+.black-white {
+  border: 1px solid lightgray;
+  background: linear-gradient(-45deg, white 50%, black 50%);
+}
+.white-black {
+  border: 1px solid lightgray;
+  background: linear-gradient(-45deg, black 50%, white 50%);
+}
+.pink-dark {
+  border: 1px solid lightgray;
+  background: linear-gradient(-45deg, #282b29 50%, #f4c4c4 50%);
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2vh 2%;
+}
+
+.black {
+  background: black;
+  color: white;
+}
+
+.white {
+  background: white;
+  color: black;
+}
+
+.pink {
+  color: #f4c4c4;
+  background: #282b29;
+}
